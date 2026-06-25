@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tortoise People Project – People and nature thriving together</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+       <!-- =========================== -->
+<!-- NAVBAR                      -->
+<!-- =========================== -->
+<header class="header" id="mainHeader">
+    <div class="container">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <div class="logo-image-wrapper">
+                        <img src="images/logo.png" alt="Herp Conservation Ghana Logo" class="logo-img" />
+                    </div>
+                    <div class="logo-text">
+                        <span>TORTOISE</span>
+                        <span>PEOPLE</span>
+                        <span>PROJECT</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ADD THIS OPENING TAG -->
+            <ul class="nav-menu">
+
+                <!-- About Us -->
+                <li class="nav-item nav-dropdown">
+                    <a href="about.html" class="nav-link dropdown-toggle">
+                        <span class="nav-text">About Us</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html#about-approach">Our Approach</a></li>
+                        <li><a href="about.html#about-team">Our Team</a></li>
+                        <li><a href="about.html#about-where">Where We Work</a></li>
+                        <li><a href="about.html#about-partners">Who We Work With</a></li>
+                    </ul>
+                </li>
+
+                <!-- Programmes -->
+                <li class="nav-item nav-dropdown">
+                    <a href="#programmes" class="nav-link dropdown-toggle">
+                        <span class="nav-text">Programmes</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Restoration_Protection.html">Habitat and Species Restoration</a></li>
+                        <li><a href="Education_Awareness.html">Environmental Education and Awareness</a></li>
+                        <li><a href="Community_Resources.html">Community Resource Governance</a></li>
+                        <li><a href="Nature_Friendly.html">Nature-Friendly Livelihood</a></li>
+                    </ul>
+                </li>
+
+                <!-- Our Strategy -->
+                <li class="nav-item">
+                    <a href="#strategy" class="nav-link">
+                        <span class="nav-text">Our Strategy</span>
+                    </a>
+                </li>
+
+                <!-- Resources -->
+                <li class="nav-item">
+                    <a href="#resources" class="nav-link">
+                        <span class="nav-text">Resources</span>
+                    </a>
+                </li>
+
+                <!-- Get Involved -->
+                <li class="nav-item">
+                    <a href="#get-involved" class="btn-nav-primary">
+                        <span class="btn-text">GET INVOLVED</span>
+                        <span class="btn-glow"></span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Mobile Controls -->
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <!-- =========================== -->
+    <!-- HERO CAROUSEL SECTION       -->
+    <!-- =========================== -->
+    <section class="hero-carousel">
+        <!-- Slides -->
+        <div class="carousel-slides">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-bg" style="background-image: url('images/slide1.jpg');"></div>
+                <div class="container">
+                    <div class="carousel-content">
+                        <div class="hero-main">
+                            <h1>People and nature <br /><span>thriving together</span></h1>
+                            <a href="#impact" class="hero-link">See what locally-led conservation looks like in action →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-bg" style="background-image: url('images/slide2.jpg');"></div>
+                <div class="container">
+                    <div class="carousel-content">
+                        <div class="hero-main">
+                            <h1>Protecting Ghana's <br /><span>amphibians & reptiles</span></h1>
+                            <a href="#impact" class="hero-link">See what locally-led conservation looks like in action →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-bg" style="background-image: url('images/slide3.jpg');"></div>
+                <div class="container">
+                    <div class="carousel-content">
+                        <div class="hero-main">
+                            <h1>Community-led <br /><span>conservation</span></h1>
+                            <a href="#impact" class="hero-link">See what locally-led conservation looks like in action →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Carousel Indicators (Dots) -->
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </section>
+
+      
+           <!-- =========================== -->
+    <!-- COMPACT CIRCULAR SCROLL BUTTON -->
+    <!-- =========================== -->
+    <div class="scroll-indicator" id="scrollIndicator">
+        <div class="scroll-ring">
+            <svg class="scroll-ring-svg" viewBox="0 0 100 100">
+                <circle class="scroll-ring-bg" cx="50" cy="50" r="42" />
+                <circle class="scroll-ring-progress" cx="50" cy="50" r="42" />
+            </svg>
+            <div class="scroll-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <span class="scroll-label" id="scrollLabel">Scroll</span>
+    </div>
+
+    <!-- =========================== -->
+    <!-- VISION & MISSION            -->
+    <!-- =========================== -->
+    <section class="vision-mission">
+        <div class="container">
+            <div class="vm-grid">
+                <div class="vm-card vision">
+                    <div class="vm-icon">👁️</div>
+                    <h3>Our Vision</h3>
+                    <p>
+                        People living peacefully and prosperously with wildlife in Ghana's
+                        thriving ecosystems
+                    </p>
+                </div>
+                <div class="vm-card mission">
+                    <div class="vm-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>
+                        Collaborate with communities to protect amphibians and reptiles in Ghana
+                    </p>
+                </div>
+                <div class="vm-card purpose">
+                    <div class="vm-icon">❤️</div>
+                    <h3>Our Core Purpose</h3>
+                    <p>
+                        Conserve priority yet overlooked amphibian and reptile species in Ghana
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== -->
+    <!-- IMPACT STATS                -->
+    <!-- =========================== -->
+    <section class="impact-stats" id="impact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Impact</h2>
+                <p>
+                    Our impact goes beyond numbers—we're transforming how conservation is done
+                    by putting communities at the heart of biodiversity protection.
+                </p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="200000">0</div>
+                    <div class="stat-label">Native trees planted</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="20000">0</div>
+                    <div class="stat-label">People reached through education</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="48000">0</div>
+                    <div class="stat-label">Tourist visits to canopy walkway</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5270">0</div>
+                    <div class="stat-label">Hectares of forest protected</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== -->
+    <!-- IMPACT HIGHLIGHT            -->
+    <!-- =========================== -->
+    <section class="impact-highlight">
+        <div class="container">
+            <div class="highlight-wrapper">
+                <div class="highlight-image">
+                    <img src="images/Tortoise.png" alt="Togo Slippery Frog" />
+                    <span class="highlight-badge">Impact Highlight</span>
+                </div>
+                <div class="highlight-content">
+                    <h2>Togo Slippery Frog population increased from 100 to over 830</h2>
+                    <p>
+                        Despite being flagged as possibly extinct, small populations were
+                        rediscovered in eastern Ghana and western Togo. Since 2012, Herp-Ghana
+                        has worked with local communities to study and conserve the species.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Establishing the Onepone Endangered Species Refuge
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Pioneering the establishment of West Africa's first captive breeding
+                            center for amphibians
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Reducing human consumption through awareness initiatives
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== -->
+    <!-- NEWS SECTION                -->
+    <!-- =========================== -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>In the news</h2>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news1.jpg" alt="News" />
+                    </div>
+                    <div class="news-content">
+                        <h3>Conservation of Ghana's threatened frogs</h3>
+                        <p>
+                            CSIR-FORIG discovers two potential new species for formal scientific
+                            description
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news2.jpg" alt="News" />
+                    </div>
+                    <div class="news-content">
+                        <h3>Quadruple Protection for the Togo Slippery Frog Reserve</h3>
+                        <p>
+                            A frog believed to be extinct for over 40 years was reidentified in 2005
+                            in the Togo-Volta highlands
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news3.jpg" alt="News" />
+                    </div>
+                    <div class="news-content">
+                        <h3>First canopy walkway in Volta Region opens</h3>
+                        <p>
+                            The Volta Region's first canopy walkway has been opened at the Ote
+                            waterfall in the valleys of Amedzofe
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news4.jpg" alt="News" />
+                    </div>
+                    <div class="news-content">
+                        <h3>Herp Conservation Ghana Wins Whitley Awards</h3>
+                        <p>
+                            Herp Conservation Ghana has received international recognition for their
+                            efforts at protecting the critically endangered Togo slippery frog
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news5.jpg" alt="News" />
+                    </div>
+                    <div class="news-content">
+                        <h3>New Cohort Celebration and Onboarding Workshop</h3>
+                        <p>
+                            Herp Conservation Ghana was privileged to be part of the new restoration
+                            champions of Africa for TerraFund AFR100
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news6.jpg" alt="News" />
+                    </div>
+                    <div class="news-content">
+                        <h3>The Unlikely Hero: How a Tiny Frog is Transforming Livelihoods</h3>
+                        <p>
+                            Herp Ghana's community centred approach to conservation is featured on
+                            Maliasili's Voices of Impact series
+                        </p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+            <div class="news-cta">
+                <a href="#" class="btn-primary">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== -->
+    <!-- PARTNERS SECTION            -->
+    <!-- =========================== -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Partners</h2>
+                <p>We collaborate with a broad network of local and international partners to amplify our impact</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="images/partner1.png" alt="Partner 1" />
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner2.png" alt="Partner 2" />
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner3.png" alt="Partner 3" />
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner4.png" alt="Partner 4" />
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner5.png" alt="Partner 5" />
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner6.png" alt="Partner 6" />
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== -->
+    <!-- NEWSLETTER                  -->
+    <!-- =========================== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content">
+                    <h2>Get updates</h2>
+                    <p>Sign up for our newsletter</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required />
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+                <div id="newsletterMessage" class="newsletter-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== -->
+    <!-- FOOTER                      -->
+    <!-- =========================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                         <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    
+                        <div class="logo-text">
+                            <span>TORTOISE</span>
+                            <span>PEOPLE</span>
+                            <span>PROJECT</span>
+                        </div>
+                    </div>
+                    <p>
+                        Tortoise People Project Ghana is a non-profit organisation dedicated to
+                        conserving Ghana's amphibians and reptiles through community-led action.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Programmes</a></li>
+                        <li><a href="#">Our Strategy</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Get Involved</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Tortoise People Project - Ghana <br />
+                            P.O. Box KS-6980 Adum, Kumasi Ghana
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +233 597 985 119
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@tortoisepeopleprojectghana.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    Copyright &copy; Tortoise People Project Ghana 2026. All rights reserved.
+                </p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
